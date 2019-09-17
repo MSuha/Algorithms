@@ -8,7 +8,6 @@ int max(int a, int b){
         return a;
     return b;
 }
-
 int LCS(string W, string V, int n, int m){
     int CS[n+1][m+1];
 
@@ -26,7 +25,7 @@ int LCS(string W, string V, int n, int m){
             }
         }
     }
-    return CS[m][n];
+    return CS[n][m];
 }
 
 int main() {
